@@ -1,0 +1,14 @@
+{
+  "name": "Pritect/ExampleLoader-ComposerLib",
+  "version": "0.0.1",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Pritect/Pritect-ExampleLoader.git"
+    }
+  ],
+  "require": {
+    "Pritect/ExampleLoader": "dev-master"
+
+  }
+}
