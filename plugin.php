@@ -6,12 +6,12 @@ Author Name: James Golovich
 License: GPL2
 */
 
-add_action( 'plugins_loaded', 'pritect_exampleloader_withcomposer_startup' );
-add_action( 'init', 'pritect_exampleloader_withcomposer_go' );
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
 
-function pritect_exampleloader_withcomposer_startup() {
-	require 'vendor/autoload.php';
-}
+require 'vendor/autoload.php';
+
+add_action( 'init', 'pritect_exampleloader_withcomposer_go' );
 
 function pritect_exampleloader_withcomposer_go() {
 	$PAK = pritect_example_loader( array(), '1.0' );
